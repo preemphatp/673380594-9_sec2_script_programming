@@ -1,10 +1,10 @@
-# 🕷️ Web Scraping Intro CLI Application
+# Web Scraping Intro CLI Application
 
 A Python-based command-line interface (CLI) application designed to introduce web scraping fundamentals[cite: 2]. The application downloads HTML web pages using the `requests` library[cite: 2] and extracts targeted content using `BeautifulSoup4`[cite: 2], scraping the main book title and chapter list from [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/2e/)[cite: 2].
 
 ---
 
-## ⚖️ Ethical Considerations & Legality
+## Ethical Considerations & Legality
 
 When performing web scraping, adhere to these key ethical rules:
 * **Robots.txt**: Always check the site's `robots.txt` rules (e.g., `https://example.com/robots.txt`) before scraping.
@@ -13,7 +13,7 @@ When performing web scraping, adhere to these key ethical rules:
 
 ---
 
-## 📁 Project Directory Structure
+## Project Directory Structure
 
 ```text
 web-scraping-intro/
@@ -29,7 +29,7 @@ web-scraping-intro/
 
 ---
 
-## ⚙️ Installation & Setup (Windows CMD)
+## Installation & Setup (Windows CMD)
 
 1. **Navigate to the project root directory**:
    ```cmd
