@@ -39,60 +39,37 @@ agentic-web-scraper/
 
 ---
 
-## การติดตั้งและรันโปรแกรมผ่าน CMD
 
-1. **เปิด CMD แล้วไปยังโฟลเดอร์โปรเจกต์**:
-   ```cmd
-   cd agentic-web-scraper
-   ```[cite: 2]
-
-2. **เปิดใช้งาน Virtual Environment**:
-   ```cmd
-   venv\Scripts\activate
-   ```[cite: 2]
-
-3. **ติดตั้ง Dependencies**:
-   ```cmd
-   pip install -r requirements.txt
-   ```[cite: 2]
-
-4. **สั่งรันโปรแกรม**:
-   ```cmd
-   python main.py
-   ```[cite: 2]
-
----
-
-## เจาะลึกการทำงานของฟังก์ชั่น (Module Breakdown)
+##  เจาะลึกการทำงานของฟังก์ชั่น (Module Breakdown)
 
 ### 1. `src/driver_manager.py` (จัดการ Browser)
-* **`get_driver()`**: สร้าง Instance ของ Selenium WebDriver (รองรับ Chrome และ Firefox) พร้อมตั้งค่า Headless mode และ User-Agent[cite: 2]
-* **`quit_driver()`**: ปิดการทำงานของ Browser ป้องกัน Context ค้างในระบบ[cite: 2]
+* **`get_driver()`**: สร้าง Instance ของ Selenium WebDriver (รองรับ Chrome และ Firefox) พร้อมตั้งค่า Headless mode และ User-Agent
+* **`quit_driver()`**: ปิดการทำงานของ Browser ป้องกัน Context ค้างในระบบ
 
 ### 2. `src/config_parser.py` (อ่านไฟล์ตั้งค่า)
-* **`load_config()`**: โหลดไฟล์ JSON จาก `configs/`[cite: 2]
-* **`_validate_config()`**: ตรวจสอบความถูกต้องของคีย์ที่จำเป็น เช่น `start_url`, `item_container_selector`, และ `item_data_selectors`[cite: 2]
+* **`load_config()`**: โหลดไฟล์ JSON จาก `configs/`
+* **`_validate_config()`**: ตรวจสอบความถูกต้องของคีย์ที่จำเป็น เช่น `start_url`, `item_container_selector`, และ `item_data_selectors`
 
 ### 3. `src/data_models.py` (โครงสร้างข้อมูล)
-* **`Product`**: `@dataclass` กำหนดโครงสร้างข้อมูลสินค้า (`name`, `price`, `description`, `url`, `image_url`) พร้อมเมธอด `to_dict()` สำหรับแปลงข้อมูลส่งออก[cite: 2]
+* **`Product`**: `@dataclass` กำหนดโครงสร้างข้อมูลสินค้า (`name`, `price`, `description`, `url`, `image_url`) พร้อมเมธอด `to_dict()` สำหรับแปลงข้อมูลส่งออก
 
 ### 4. `src/utils.py` (เครื่องมือช่วยเหลือ)
-* **`wait_for_element()`**: ใช้ `WebDriverWait` รอให้ Element ปรากฏบนหน้าเว็บก่อนดึงข้อมูล[cite: 2]
-* **`robust_click()`**: ลองกดปุ่มซ้ำกรณีปุ่มยังไม่พร้อมใช้งาน[cite: 2]
-* **`save_data_to_json()`**: บันทึกข้อมูลลิสต์ลงในไฟล์ JSON พร้อมจัดรูปแบบสวยงาม (`indent=4`)[cite: 2]
+* **`wait_for_element()`**: ใช้ `WebDriverWait` รอให้ Element ปรากฏบนหน้าเว็บก่อนดึงข้อมูล
+* **`robust_click()`**: ลองกดปุ่มซ้ำกรณีปุ่มยังไม่พร้อมใช้งาน
+* **`save_data_to_json()`**: บันทึกข้อมูลลิสต์ลงในไฟล์ JSON พร้อมจัดรูปแบบสวยงาม (`indent=4`)
 
 ### 5. `src/scraper_agent.py` (ตรรกะ Agent หลัก)
-* **`scrape_page()`**: ค้นหา Element ของสินค้าตาม CSS/XPATH selector ที่ระบุใน config แล้วแปลงเป็นวัตถุ `Product`[cite: 2]
-* **`run()`**: ควบคุมลูปการทำงานหลัก เปิด URL เป้าหมาย -> สแครปหน้าปัจจุบัน -> กดปุ่ม Next Page เพื่อไปยังหน้าถัดไป -> เซฟข้อมูล[cite: 2]
+* **`scrape_page()`**: ค้นหา Element ของสินค้าตาม CSS/XPATH selector ที่ระบุใน config แล้วแปลงเป็นวัตถุ `Product`
+* **`run()`**: ควบคุมลูปการทำงานหลัก เปิด URL เป้าหมาย -> สแครปหน้าปัจจุบัน -> กดปุ่ม Next Page เพื่อไปยังหน้าถัดไป -> เซฟข้อมูล
 
 ### 6. `main.py` (Entry Point)
-* อ่าน config จาก `configs/example_site_config.json`[cite: 2]
-* เรียกใช้ `ScraperAgent` เพื่อเริ่มกระบวนการสแครปข้อมูลโดยอัตโนมัติ[cite: 2]
+* อ่าน config จาก `configs/example_site_config.json`
+* เรียกใช้ `ScraperAgent` เพื่อเริ่มกระบวนการสแครปข้อมูลโดยอัตโนมัติ
 
 ---
 
-## จริยธรรมในการดึงข้อมูล (Ethics & Legality)
+## ⚖️ จริยธรรมในการดึงข้อมูล (Ethics & Legality)
 
-* **`robots.txt`**: ตรวจสอบสิทธิ์การสแกนของเว็บไซต์เป้าหมายเสมอ[cite: 2]
-* **Rate Limiting**: กำหนด `delay_between_pages` ใน Config เพื่อไม่ให้ส่งคำขอถี่เกินไปจนกระทบ Server[cite: 2]
-* **Educational Purpose**: โครงสร้างนี้จัดทำขึ้นเพื่อการศึกษาเท่านั้น[cite: 2]
+* **`robots.txt`**: ตรวจสอบสิทธิ์การสแกนของเว็บไซต์เป้าหมายเสมอ
+* **Rate Limiting**: กำหนด `delay_between_pages` ใน Config เพื่อไม่ให้ส่งคำขอถี่เกินไปจนกระทบ Server
+* **Educational Purpose**: โครงสร้างนี้จัดทำขึ้นเพื่อการศึกษาเท่านั้น
