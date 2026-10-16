@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ING001",
+    "name": "Arabica Coffee Beans",
+    "category": "Coffee",
+    "stock": 20,
+    "details": {
+      "unit": "kg",
+      "origin": "Doi Chang, Chiang Rai",
+      "roast": "Medium"
+    }
+  },
+  {
+    "id": "ING002",
+    "name": "Fresh Milk",
+    "category": "Dairy",
+    "stock": 30,
+    "details": {
+      "unit": "liter",
+      "brand": "Khon Kaen Dairy"
+    }
+  },
+  {
+    "id": "ING003",
+    "name": "Matcha Powder",
+    "category": "Tea",
+    "stock": 10,
+    "details": {
+      "unit": "kg",
+      "grade": "Ceremonial"
+    }
+  },
+  {
+    "id": "ING004",
+    "name": "Caramel Syrup",
+    "category": "Syrup",
+    "stock": 8,
+    "details": {
+      "unit": "bottle",
+      "flavors": [
+        "Caramel",
+        "Salted Caramel"
+      ]
+    }
+  }
+]

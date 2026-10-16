@@ -1,0 +1,72 @@
+[
+    {
+        "OrderID": "C001",
+        "Product": "Iced Latte x2",
+        "Amount": 130.0,
+        "Price": 65.0,
+        "Customer": "Preem"
+    },
+    {
+        "OrderID": "C002",
+        "Product": "Espresso",
+        "Amount": 50.0,
+        "Price": 50.0,
+        "Customer": "Mook"
+    },
+    {
+        "OrderID": "C003",
+        "Product": "Matcha Latte x3",
+        "Amount": 225.0,
+        "Price": 75.0,
+        "Customer": "Pim"
+    },
+    {
+        "OrderID": "C004",
+        "Product": "Americano",
+        "Amount": 55.0,
+        "Price": 55.0,
+        "Customer": "Ton"
+    },
+    {
+        "OrderID": "C005",
+        "Product": "Caramel Macchiato x2",
+        "Amount": 150.0,
+        "Price": 75.0,
+        "Customer": "Preem"
+    },
+    {
+        "OrderID": "C006",
+        "Product": "Croissant",
+        "Amount": 45.0,
+        "Price": 45.0,
+        "Customer": "Mook"
+    },
+    {
+        "OrderID": "C007",
+        "Product": "Thai Tea x4",
+        "Amount": 200.0,
+        "Price": 50.0,
+        "Customer": "Beam"
+    },
+    {
+        "OrderID": "C008",
+        "Product": "Cocoa",
+        "Amount": 60.0,
+        "Price": 60.0,
+        "Customer": "Pim"
+    },
+    {
+        "OrderID": "C009",
+        "Product": "Cappuccino x2",
+        "Amount": 120.0,
+        "Price": 60.0,
+        "Customer": "Ton"
+    },
+    {
+        "OrderID": "C010",
+        "Product": "Brownie",
+        "Amount": 40.0,
+        "Price": 40.0,
+        "Customer": "Beam"
+    }
+]
