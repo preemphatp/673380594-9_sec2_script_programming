@@ -44,9 +44,12 @@
 | 1 | [Building a Simple CLI Application (Task Manager)](./Class%20Activity/Activity%201/my-task-manager) |
 | 2 | [Object-Oriented Programming (OOP Task Manager)](./Class%20Activity/Activity%202/my-oop-task-manager) |
 | 3 | [Interacting with Web APIs](./Class%20Activity/Activity%203/my-api-fetcher) |
-| 4 | Project Planning & Design |
+| 4 | [Project Planning & Design](./Class%20Activity/Activity%204/enhanced-task-manager-design) |
 
 ## Projects
 
 - **Mini Project:** ระบบแจ้งเตือนเครื่องซักผ้าร้านหยอดเหรียญ → https://github.com/preemphatp/Mini_Project
 - **Final Project:** Virtual Pet Companion → https://github.com/144P75/script_project
+
+### Personal Reflection
+[`Personal_Reflection.md`](./Personal_Reflection.md)  สิ่งที่ได้เรียนรู้, reflection และ feedback ของรายวิชา 
