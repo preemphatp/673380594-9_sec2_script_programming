@@ -1,0 +1,8 @@
+[
+    {"id": 1, "description": "Take NetAcad Python Essentials exam", "completed": false, "tags": ["exam", "netacad"], "_type": "DueDateTask", "due_date": "2026-10-17"},
+    {"id": 2, "description": "Finish Lab X Basic and Advance (Week 8-12)", "completed": true, "tags": ["lab", "github"], "_type": "PriorityTask", "priority": "High"},
+    {"id": 3, "description": "Submit personal portfolio on Classroom", "completed": false, "tags": ["portfolio", "github"], "_type": "DueDateTask", "due_date": "2026-10-23"},
+    {"id": 4, "description": "Class Activity 3: Web APIs", "completed": false, "tags": ["class-activity", "bonus"], "_type": "PriorityTask", "priority": "Low"},
+    {"id": 5, "description": "Restructure GitHub repo into portfolio layout", "completed": true, "tags": ["github", "portfolio"], "_type": "Task"},
+    {"id": 6, "description": "Delete Gmail App Password after Week 12 email labs", "completed": false, "tags": ["security"], "_type": "PriorityTask", "priority": "Medium"}
+]
