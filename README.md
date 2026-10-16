@@ -51,5 +51,13 @@
 - **Mini Project:** ระบบแจ้งเตือนเครื่องซักผ้าร้านหยอดเหรียญ → https://github.com/preemphatp/Mini_Project
 - **Final Project:** Virtual Pet Companion → https://github.com/144P75/script_project
 
-### Personal Reflection
+## Personal Reflection
 [`Personal_Reflection.md`](./Personal_Reflection.md)  สิ่งที่ได้เรียนรู้, reflection และ feedback ของรายวิชา 
+
+
+## Certificates
+
+| ใบประกาศ | ไฟล์ |
+|---|---|
+| Cisco NetAcad: Python Essentials 1 | [Python_Essentials_1_certificate.pdf](./Certificates/Python_Essentials_1_certificate.pdf) |
+| Cisco NetAcad: Python Essentials 2 | [Python_Essentials_2_certificate.pdf](./Certificates/Python_Essentials_2_certificate.pdf) |
