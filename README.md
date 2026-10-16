@@ -30,8 +30,8 @@
 
 | Lab | Basic | Advance |
 |---|---|---|
-| Lab 1 (Week 7) | Web Scraping Intro, Task Manager | Advanced Web Scraping (Agentic) |
-| Lab 2 (Week 8) | Object-Oriented Programming | Agentic Data Processing |
+| Lab 1 (Week 7) | [Web Scraping Intro](./Lab%20X%20Basic/Lab%201%20Basic/web-scraping-intro) | [Advanced Web Scraping (Agentic)](./Lab%20X%20Advance/Lab%201%20Advance/agentic-web-scraper) |
+| Lab 2 (Week 8) | [CSV & JSON Data Processor](./Lab%20X%20Basic/Lab%202%20Basic/data-processor) | [Agentic Data Processing](./Lab%20X%20Advance/Lab%202%20Advance/agentic-data-processor) |
 | Lab 3 (Week 10) | Automating Spreadsheets | Advanced Spreadsheet Automation |
 | Lab 4 (Week 11) | Automating PDFs & Word | Project Planning & Design |
 | Lab 5 (Week 12) | Automating Communication | Agentic Communication Workflow |
@@ -40,7 +40,7 @@
 
 | # | หัวข้อ |
 |---|---|
-| 1 | Building a Simple CLI Application |
+| 1 | [Building a Simple CLI Application (Task Manager)](./Class%20Activity/Activity%201/my-task-manager) |
 | 2 | Object-Oriented Programming |
 | 3 | Interacting with Web APIs |
 | 4 | Project Planning & Design |
