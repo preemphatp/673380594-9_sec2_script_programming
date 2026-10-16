@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "description": "Write PLAN.md: requirements and architecture",
+        "completed": true,
+        "tags": [
+            "planning",
+            "docs"
+        ],
+        "_type": "Task"
+    },
+    {
+        "id": 2,
+        "description": "Split code into task / data_persistence / task_manager / cli_interface",
+        "completed": true,
+        "tags": [
+            "architecture",
+            "refactor"
+        ],
+        "_type": "PriorityTask",
+        "priority": "High"
+    },
+    {
+        "id": 3,
+        "description": "Implement search, filter and sort in Lab 12",
+        "completed": false,
+        "tags": [
+            "lab12",
+            "feature"
+        ],
+        "_type": "DueDateTask",
+        "due_date": "2026-10-23"
+    },
+    {
+        "id": 4,
+        "description": "Add unit tests for TaskManager",
+        "completed": false,
+        "tags": [
+            "testing"
+        ],
+        "_type": "PriorityTask",
+        "priority": "Medium"
+    },
+    {
+        "id": 5,
+        "description": "Prepare demo data for presentation",
+        "completed": false,
+        "tags": [
+            "demo",
+            "presentation"
+        ],
+        "_type": "Task"
+    },
+    {
+        "id": 6,
+        "description": "Test",
+        "completed": false,
+        "tags": [
+            "work"
+        ],
+        "_type": "Task"
+    }
+]
