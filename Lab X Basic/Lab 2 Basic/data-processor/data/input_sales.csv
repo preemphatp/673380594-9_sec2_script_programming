@@ -1,0 +1,11 @@
+OrderID,Product,Amount,Price,Customer
+C001,Iced Latte x2,130.00,65.00,Preem
+C002,Espresso,50.00,50.00,Mook
+C003,Matcha Latte x3,225.00,75.00,Pim
+C004,Americano,55.00,55.00,Ton
+C005,Caramel Macchiato x2,150.00,75.00,Preem
+C006,Croissant,45.00,45.00,Mook
+C007,Thai Tea x4,200.00,50.00,Beam
+C008,Cocoa,60.00,60.00,Pim
+C009,Cappuccino x2,120.00,60.00,Ton
+C010,Brownie,40.00,40.00,Beam

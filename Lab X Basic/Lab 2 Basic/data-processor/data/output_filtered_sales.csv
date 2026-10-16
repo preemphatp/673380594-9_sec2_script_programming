@@ -1,0 +1,7 @@
+OrderID,Product,Amount,Price,Customer
+C001,Iced Latte x2,130.00,65.00,Preem
+C003,Matcha Latte x3,225.00,75.00,Pim
+C005,Caramel Macchiato x2,150.00,75.00,Preem
+C007,Thai Tea x4,200.00,50.00,Beam
+C009,Cappuccino x2,120.00,60.00,Ton
+SUMMARY,Total/Avg,1075.00,57.50,Count: 5

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "ING001",
+        "name": "Arabica Coffee Beans",
+        "category": "Coffee",
+        "stock": 12,
+        "details": {
+            "unit": "kg",
+            "origin": "Doi Chang, Chiang Rai"
+        }
+    },
+    {
+        "id": "ING002",
+        "name": "Fresh Milk",
+        "category": "Dairy",
+        "stock": 30,
+        "details": {
+            "unit": "liter",
+            "brand": "Local Farm"
+        }
+    },
+    {
+        "id": "ING003",
+        "name": "Matcha Powder",
+        "category": "Tea",
+        "stock": 4,
+        "details": {
+            "unit": "kg",
+            "grade": "Ceremonial"
+        }
+    }
+]
