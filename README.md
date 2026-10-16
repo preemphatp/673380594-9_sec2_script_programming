@@ -41,7 +41,7 @@
 | # | หัวข้อ |
 |---|---|
 | 1 | [Building a Simple CLI Application (Task Manager)](./Class%20Activity/Activity%201/my-task-manager) |
-| 2 | Object-Oriented Programming |
+| 2 | [Object-Oriented Programming (OOP Task Manager)](./Class%20Activity/Activity%202/my-oop-task-manager) |
 | 3 | Interacting with Web APIs |
 | 4 | Project Planning & Design |
 

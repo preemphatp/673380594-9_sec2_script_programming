@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "description": "GE",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "description": "Seminar",
+        "completed": false
+    }
+]
