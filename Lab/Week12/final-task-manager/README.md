@@ -26,3 +26,4 @@ python -m unittest discover tests
 ## ผลลัพธ์
 
 ![Demo](screenshots/demo.png)
+![Demo 2](screenshots/demo2.png)

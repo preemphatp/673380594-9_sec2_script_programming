@@ -25,6 +25,7 @@
 | [Week 4](./Lab/Week4) | Data Structures: Lists & Tuples |
 | [Week 5](./Lab/Week5) | Data Structures: Dictionaries & Sets |
 | [Week 6](./Lab/Week6) | Functions & Modules |
+| [Week 12](./Lab/Week12/final-task-manager) | Final Project Development: Enhanced Task Manager |
 
 ## Lab X
 
