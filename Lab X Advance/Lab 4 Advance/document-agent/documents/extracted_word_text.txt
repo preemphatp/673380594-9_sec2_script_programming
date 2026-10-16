@@ -1,0 +1,18 @@
+   REPORT TITLE: Monthly Sales Summary
+   DATE: 2026-10-16
+   AUTHOR: Preemphat Pawatnavakun
+   COMPANY: Preem's Coffee
+   ---
+   INTRODUCTION:
+   This automated report summarizes coffee shop sales and inventory for the month.
+   ---
+   MONTHLY OVERVIEW: October 2026
+   Here is a summary of key performance indicators:
+   ---
+   CONCLUSION:
+   This report concludes the performance analysis.
+Category	Value	Trend
+Total Revenue	11,320 THB	Up 12%
+Best Seller	Thai Tea (40 cups)	Stable
+High Value Menu Items	5 of 9	Up
+New Ingredient	Caramel Syrup	New

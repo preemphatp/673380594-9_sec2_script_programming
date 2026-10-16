@@ -1,0 +1,155 @@
+[
+    {
+        "timestamp": "2026-10-16T20:34:17.492384",
+        "status": "INFO",
+        "task_type": "agent_run",
+        "message": "Document Agent started.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.493394",
+        "status": "INFO",
+        "task_type": "generate_word_report",
+        "message": "Starting task 'Generate Monthly Coffee Shop Report'",
+        "details": {
+            "name": "Generate Monthly Coffee Shop Report",
+            "type": "generate_word_report",
+            "template_path": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\templates/report_template.docx",
+            "output_path": "documents/generated_report.docx",
+            "data": {
+                "REPORT_TITLE": "Monthly Sales Summary",
+                "INTRODUCTION_TEXT": "This automated report summarizes coffee shop sales and inventory for the month.",
+                "MONTH_PERIOD": "October 2026"
+            },
+            "table_data": [
+                [
+                    "Category",
+                    "Value",
+                    "Trend"
+                ],
+                [
+                    "Total Revenue",
+                    "11,320 THB",
+                    "Up 12%"
+                ],
+                [
+                    "Best Seller",
+                    "Thai Tea (40 cups)",
+                    "Stable"
+                ],
+                [
+                    "High Value Menu Items",
+                    "5 of 9",
+                    "Up"
+                ],
+                [
+                    "New Ingredient",
+                    "Caramel Syrup",
+                    "New"
+                ]
+            ]
+        }
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.535520",
+        "status": "SUCCESS",
+        "task_type": "generate_word_report",
+        "message": "Task 'Generate Monthly Coffee Shop Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.535741",
+        "status": "INFO",
+        "task_type": "apply_pdf_watermark",
+        "message": "Starting task 'Apply Staff-Only Watermark to Recipe PDF'",
+        "details": {
+            "name": "Apply Staff-Only Watermark to Recipe PDF",
+            "type": "apply_pdf_watermark",
+            "input_pdf": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/source_document.pdf",
+            "output_pdf": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/watermarked_document.pdf",
+            "watermark_text": "STAFF ONLY",
+            "font_size": 70,
+            "color": [
+                1,
+                0,
+                0,
+                0.15
+            ],
+            "angle": 55
+        }
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.580950",
+        "status": "SUCCESS",
+        "task_type": "apply_pdf_watermark",
+        "message": "Task 'Apply Staff-Only Watermark to Recipe PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.581285",
+        "status": "INFO",
+        "task_type": "merge_pdfs",
+        "message": "Starting task 'Merge Staff Handbook'",
+        "details": {
+            "name": "Merge Staff Handbook",
+            "type": "merge_pdfs",
+            "input_pdfs": [
+                "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/staff_handbook_part1.pdf",
+                "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/staff_handbook_part2.pdf"
+            ],
+            "output_pdf": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/merged_docs.pdf"
+        }
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.587510",
+        "status": "SUCCESS",
+        "task_type": "merge_pdfs",
+        "message": "Task 'Merge Staff Handbook' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.587936",
+        "status": "INFO",
+        "task_type": "extract_word_text",
+        "message": "Starting task 'Extract Text from Generated Word Report'",
+        "details": {
+            "name": "Extract Text from Generated Word Report",
+            "type": "extract_word_text",
+            "input_docx": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/generated_report.docx",
+            "output_text_file": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/extracted_word_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.614711",
+        "status": "SUCCESS",
+        "task_type": "extract_word_text",
+        "message": "Task 'Extract Text from Generated Word Report' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.615090",
+        "status": "INFO",
+        "task_type": "extract_pdf_text",
+        "message": "Starting task 'Extract Text from Recipe PDF'",
+        "details": {
+            "name": "Extract Text from Recipe PDF",
+            "type": "extract_pdf_text",
+            "input_pdf": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/source_document.pdf",
+            "output_text_file": "C:\\Users\\NITRO\\OneDrive\\เดสก์ท็อป\\ComSci KKU\\1-2026\\SC\\673380594-9_sec2_script_programming\\Lab X Advance\\Lab 4 Advance\\document-agent\\documents/extracted_pdf_text.txt"
+        }
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.620513",
+        "status": "SUCCESS",
+        "task_type": "extract_pdf_text",
+        "message": "Task 'Extract Text from Recipe PDF' completed.",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-16T20:34:17.620918",
+        "status": "INFO",
+        "task_type": "agent_run_summary",
+        "message": "Finished in 0.13s.",
+        "details": {}
+    }
+]

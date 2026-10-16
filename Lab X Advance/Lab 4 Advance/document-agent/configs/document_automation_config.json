@@ -1,0 +1,88 @@
+{
+  "global_data": {
+    "REPORT_DATE": "2026-10-16",
+    "AUTHOR_NAME": "Preemphat Pawatnavakun",
+    "COMPANY_NAME": "Preem's Coffee"
+  },
+  "output_files": {
+    "generated_report": "documents/generated_report.docx",
+    "watermarked_pdf": "documents/watermarked_document.pdf",
+    "merged_pdf": "documents/merged_docs.pdf"
+  },
+  "tasks": [
+    {
+      "name": "Generate Monthly Coffee Shop Report",
+      "type": "generate_word_report",
+      "template_path": "templates/report_template.docx",
+      "output_path": "documents/generated_report.docx",
+      "data": {
+        "REPORT_TITLE": "Monthly Sales Summary",
+        "INTRODUCTION_TEXT": "This automated report summarizes coffee shop sales and inventory for the month.",
+        "MONTH_PERIOD": "October 2026"
+      },
+      "table_data": [
+        [
+          "Category",
+          "Value",
+          "Trend"
+        ],
+        [
+          "Total Revenue",
+          "11,320 THB",
+          "Up 12%"
+        ],
+        [
+          "Best Seller",
+          "Thai Tea (40 cups)",
+          "Stable"
+        ],
+        [
+          "High Value Menu Items",
+          "5 of 9",
+          "Up"
+        ],
+        [
+          "New Ingredient",
+          "Caramel Syrup",
+          "New"
+        ]
+      ]
+    },
+    {
+      "name": "Apply Staff-Only Watermark to Recipe PDF",
+      "type": "apply_pdf_watermark",
+      "input_pdf": "documents/source_document.pdf",
+      "output_pdf": "documents/watermarked_document.pdf",
+      "watermark_text": "STAFF ONLY",
+      "font_size": 70,
+      "color": [
+        1,
+        0,
+        0,
+        0.15
+      ],
+      "angle": 55
+    },
+    {
+      "name": "Merge Staff Handbook",
+      "type": "merge_pdfs",
+      "input_pdfs": [
+        "documents/staff_handbook_part1.pdf",
+        "documents/staff_handbook_part2.pdf"
+      ],
+      "output_pdf": "documents/merged_docs.pdf"
+    },
+    {
+      "name": "Extract Text from Generated Word Report",
+      "type": "extract_word_text",
+      "input_docx": "documents/generated_report.docx",
+      "output_text_file": "documents/extracted_word_text.txt"
+    },
+    {
+      "name": "Extract Text from Recipe PDF",
+      "type": "extract_pdf_text",
+      "input_pdf": "documents/source_document.pdf",
+      "output_text_file": "documents/extracted_pdf_text.txt"
+    }
+  ]
+}
