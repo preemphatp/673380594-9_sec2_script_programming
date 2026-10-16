@@ -1,0 +1,80 @@
+{
+    "tasks": [
+        {
+            "name": "Send Daily Coffee Shop Sales Report",
+            "type": "send_email",
+            "parameters": {
+                "recipients": {
+                    "to": [
+                        "{recipient_email}"
+                    ],
+                    "cc": [
+                        "{sender_email}"
+                    ]
+                },
+                "subject_template": "Preem's Coffee Daily Sales Report - {report_date}",
+                "body_template": "{student_info}\n\nDear Team,\n\nPlease find the sales report for {report_date} attached. Total sales: {sales_figure:,.2f} THB. Customers served: {total_customers}. Best seller: {best_seller}.\n\nBest regards,\nAutomated Agent",
+                "attachments": [
+                    "data/reports/sales_report.pdf",
+                    "data/reports/summary_data.xlsx"
+                ],
+                "is_html": false
+            }
+        },
+        {
+            "name": "Simulate Incoming Request Email (to self)",
+            "type": "send_email",
+            "parameters": {
+                "recipients": {
+                    "to": [
+                        "{sender_email}"
+                    ]
+                },
+                "subject_template": "Data Request for {report_date} - Urgent",
+                "body_template": "{student_info}\n\nHello Agent,\n\nWe need the latest sales data for {report_date}. Please process urgently. This is an urgent request for new data processing.",
+                "attachments": [
+                    "data/reports/sales_report.pdf"
+                ],
+                "is_html": false
+            }
+        },
+        {
+            "name": "Process Incoming Data Requests",
+            "type": "process_inbox",
+            "parameters": {
+                "wait_seconds": 15,
+                "mailbox": "INBOX",
+                "search_criteria": {
+                    "status": "UNSEEN",
+                    "from_sender": "{sender_email}",
+                    "subject_contains": "Data Request"
+                },
+                "download_attachments_base_dir": "data/incoming_attachments",
+                "rules": [
+                    {
+                        "if": {
+                            "subject_contains": "Urgent",
+                            "has_attachments": true
+                        },
+                        "then": {
+                            "send_sms_alert": true,
+                            "alert_phone_numbers": [
+                                "{sms_gateway_address}"
+                            ],
+                            "alert_message_template": "URGENT: New Data Request email received from {sender} - Subject: {subject}."
+                        }
+                    },
+                    {
+                        "if": {
+                            "body_contains": "new data processing"
+                        },
+                        "then": {
+                            "reply_with_template": "Agent received your request for '{subject}'. We are now processing the new data.\n\n{student_info}",
+                            "reply_subject_template": "Re: {subject} - Received & Processing"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
