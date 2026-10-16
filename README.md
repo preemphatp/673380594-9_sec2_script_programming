@@ -34,7 +34,7 @@
 | Lab 2 (Week 8) | [CSV & JSON Data Processor](./Lab%20X%20Basic/Lab%202%20Basic/data-processor) | [Agentic Data Processing](./Lab%20X%20Advance/Lab%202%20Advance/agentic-data-processor) |
 | Lab 3 (Week 10) | [Automating Spreadsheets](./Lab%20X%20Basic/Lab%203%20Basic/spreadsheet-automator) | [Advanced Spreadsheet Automation](./Lab%20X%20Advance/Lab%203%20Advance/spreadsheet-agent) |
 | Lab 4 (Week 11) | [Automating PDFs & Word](./Lab%20X%20Basic/Lab%204%20Basic/document-automator) | [Document Agent (Project Planning & Design)](./Lab%20X%20Advance/Lab%204%20Advance/document-agent) |
-| Lab 5 (Week 12) | Automating Communication | Agentic Communication Workflow |
+| Lab 5 (Week 12) | [Automating Communication (Email & SMS)](./Lab%20X%20Basic/Lab%205%20Basic/email-sms-automator) | Agentic Communication Workflow |
 
 ## Class Activity
 
